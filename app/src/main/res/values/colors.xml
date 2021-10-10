@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#E3E5EF</color>
+    <color name="color2">#3F51B5</color>
+    <color name="color3">#1976D3</color>
+    <color name="colorText2">#2E2E2E</color>
+    <color name="colorText">#202020</color>
+    <color name="nRed">#E91E1E</color>
+    <color name="nWhite">#FFFFFF</color>
+    <color name="nSelect">#8A8989</color>
+    <color name="transparent">#66000000</color>
+    <color name="nGray">#D1D1D1</color>
+
+    <!--    <color name="colorBackground">#212121</color>-->
+    <!--    <color name="color2">#121212</color>-->
+    <!--    <color name="color3">#2E2E2E</color>-->
+    <!--    <color name="colorText2">#BB85FC</color>-->
+    <!--    <color name="colorText">#A0A0A0</color>-->
+    <!--    <color name="nRed">#E91E1E</color>-->
+    <!--    <color name="nWhite">#FFFFFF</color>-->
+
+</resources>

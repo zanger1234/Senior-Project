@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageItemMain"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@color/nWhite"
+        app:layout_constraintBottom_toTopOf="@+id/textItemNameMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_favorite3"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageItemMain"
+        app:layout_constraintEnd_toEndOf="@+id/imageItemMain"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/imageItemMain"
+        app:layout_constraintTop_toTopOf="@+id/imageItemMain"
+        app:layout_constraintVertical_bias="0.88"
+        android:layout_gravity="bottom|end">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorBackground"
+            android:src="@drawable/favorite_red" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textItemNameMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="item"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageItemMain"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/imageItemMain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <TextView
+        android:id="@+id/textItemPriceMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textItemNameMain"
+        app:layout_constraintStart_toStartOf="@+id/textItemNameMain"
+        app:layout_constraintTop_toBottomOf="@+id/textItemNameMain"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/textItemDescriptionMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textItemPriceMain"
+        app:layout_constraintStart_toStartOf="@+id/textItemPriceMain"
+        app:layout_constraintTop_toBottomOf="@+id/textItemPriceMain"
+        app:layout_constraintVertical_bias="0.07" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

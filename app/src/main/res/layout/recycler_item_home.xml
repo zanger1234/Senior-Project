@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/nWhite" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@color/colorBackground"
+                android:src="@drawable/favorite_red" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textItemName"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="item"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/textItemPrice"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewItem"
+        app:layout_constraintStart_toStartOf="@+id/cardViewItem"
+        app:layout_constraintTop_toBottomOf="@id/cardViewItem"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/textItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="price"
+        android:textColor="@color/colorText2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textItemName"
+        app:layout_constraintStart_toStartOf="@+id/textItemName"
+        app:layout_constraintTop_toBottomOf="@+id/textItemName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

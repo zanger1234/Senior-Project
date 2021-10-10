@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/color3"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navHeaderImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/person"
+        app:civ_border_color="@color/nWhite"
+        app:civ_border_width="2dp"
+        android:onClick="loginFromInventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:tint="@color/nWhite" />
+
+
+    <TextView
+        android:id="@+id/headerTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guest"
+        android:textColor="@color/nWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navHeaderImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toEndOf="@+id/navHeaderImage"
+        app:layout_constraintTop_toTopOf="@+id/navHeaderImage"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:id="@+id/headerTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="(Press Image to Login or Register)"
+        android:textColor="@color/nGray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/navHeaderImage"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextUsername"
+        app:layout_constraintVertical_bias="0.52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

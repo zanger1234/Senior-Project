@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Senior Project</string>
+    <string name="username1">Username:</string>
+    <string name="password1">Password:</string>
+    <string name="username2">Username:</string>
+    <string name="email2">Email:</string>
+    <string name="password2">Password:</string>
+    <string name="Open">Password:</string>
+    <string name="Close">Password:</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>
